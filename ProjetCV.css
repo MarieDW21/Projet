@@ -1,51 +1,53 @@
-html{
-    margin: 40px;
-}
+
 body{
     background-color: rgb(247, 247, 218);
 }
 
+/* Haut CV*/
 .flex-container1{
     display: flex;
+    flex-direction: row;
 }
 h1 {
     width: 30%;
     padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-size: 40px;
 }
 #photo {
-    display: flex;
-    width: 10%;
-    height: 10%;
     margin: 20px;
+    background-color: #e7cc9b;
 }
-
 #presentation{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
+    width: 30%;
     background-color: white;
     border: #cfcfcf double;
-    padding: 30px;
+    padding: 10px;
+    padding-left: 30px;
     margin: 20px;
+    margin-left: 90px;
+}
+#title1{
+    color: #d5934e;
+    margin: 0px;
+}
+p{
+    margin-top: 15px;
 }
 
+/* Milieu CV */
 .flex-container{
     display: flex;
     line-height: 25px;
-}
-#cloud{
-    width: 90%;
-    height: 78%;
+    flex-direction: row;
 }
 .flexbox{
-    display: flex;
-    flex-direction: column;
-    width: 33%;
+   flex: 1;
 }
-
-ul{
-    list-style-type: none;
-    padding-left: 5px;
+#cloud{
+    width: 100%;
+    height: 80%;
 }
 #formation{
     border-left: #dadada double 5px;
@@ -55,28 +57,73 @@ ul{
 #job{
     padding-left: 20px;
 }
-
-.flex-container2{
-    display: flex;
+ul{
+    list-style-type: none;
+    padding-left: 5px;
 }
-
-.flexbox2{
-    display: flex;
-    flex-direction: column;
+.firstline{
+    font-size: larger;
+    font-weight: bold;
 }
-
-.hobbies{
-    width: 60%;
-    margin-left: 30px;
+.thirdline{
+    font-size: small;
+    font-style: italic;
 }
-
-
-#title1{
-    color: #d5934e;
-}
-
 .title{
     font-size: 25px;
     text-decoration: underline;
     text-shadow: -2px 1px #ebb878;
+    text-align: center;
+}
+
+/* Bas CV */
+.flex-container2{
+    display: flex;
+}
+h3{
+    text-decoration: underline;
+}
+#contact{
+    justify-content: center;
+    padding: 15px;
+}
+#hobbies{
+    width: 60%;
+    margin-left: 30px;
+}
+#pictures{
+    text-align: center;
+}
+#pictureshobbies{
+    width: 60%;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .flex-container1{
+        flex-direction: column;
+        
+    }
+    .flex-container2{
+        flex-direction: column;
+    }
+    #presentation{
+        width: auto;
+        margin: auto;
+    }
+    #photo{
+        text-align: center;
+    }
+    #pictureshobbies{
+        width: 100%;
+    }
+    #formation, #job{
+        padding-left: 0px;
+    }
 }
