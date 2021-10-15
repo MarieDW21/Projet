@@ -42,6 +42,7 @@ p{
     display: flex;
     line-height: 25px;
     flex-direction: row;
+    background-color: white;
 }
 .flexbox{
    flex: 1;
@@ -98,15 +99,18 @@ ul{
     justify-content: center;
     flex-grow: 3;
     flex-direction: column;
+    background-color: #e7cc9b;
+    border: #dadada double 5px;
+    margin: 15px;
 }
 #linkform{
     padding: 10px;
     text-decoration: none;
-    border: solid #e7cc9b;
+    border: solid white;
     border-radius: 10px;
-    background-color: #e7cc9b;
+    background-color: white;
     font-weight: bold;
-    color: white;
+    color: #e7cc9b;
 }
 
 
