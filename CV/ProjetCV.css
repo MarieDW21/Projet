@@ -1,6 +1,7 @@
 
 body{
     background-color: rgb(247, 247, 218);
+    font-family: serif;
 }
 
 /* Haut CV*/
@@ -80,22 +81,32 @@ ul{
 .flex-container2{
     display: flex;
 }
-h3{
-    text-decoration: underline;
-}
-#contact{
-    justify-content: center;
-    padding: 15px;
-}
 #hobbies{
     width: 60%;
     margin-left: 30px;
+    flex-grow: 7;
 }
 #pictures{
     text-align: center;
 }
 #pictureshobbies{
     width: 60%;
+}
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 3;
+    flex-direction: column;
+}
+#linkform{
+    padding: 10px;
+    text-decoration: none;
+    border: solid #e7cc9b;
+    border-radius: 10px;
+    background-color: #e7cc9b;
+    font-weight: bold;
+    color: white;
 }
 
 
